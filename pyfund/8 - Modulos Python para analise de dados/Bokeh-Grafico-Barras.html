@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="298f887d-4f35-44d5-b13a-3d65e070289a" data-root-id="1177"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1362">
+          {"3900fa12-e3c8-4ec4-b838-c1009e7e026d":{"roots":{"references":[{"attributes":{"below":[{"id":"1188"}],"center":[{"id":"1190"},{"id":"1194"},{"id":"1223"}],"left":[{"id":"1191"}],"plot_height":350,"renderers":[{"id":"1213"}],"title":{"id":"1178"},"toolbar":{"id":"1202"},"toolbar_location":null,"x_range":{"id":"1180"},"x_scale":{"id":"1184"},"y_range":{"id":"1182"},"y_scale":{"id":"1186"}},"id":"1177","subtype":"Figure","type":"Plot"},{"attributes":{"factors":["Ma\u00e7as","Peras","Tangerinas","Uvas","Melancias","Morangos"]},"id":"1180","type":"FactorRange"},{"attributes":{"fill_color":{"field":"fruits","transform":{"id":"1209"}},"line_color":{"value":"white"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"fruits"}},"id":"1211","type":"VBar"},{"attributes":{},"id":"1216","type":"BasicTickFormatter"},{"attributes":{"factors":["Ma\u00e7as","Peras","Tangerinas","Uvas","Melancias","Morangos"],"palette":["#3288bd","#99d594","#e6f598","#fee08b","#fc8d59","#d53e4f"]},"id":"1209","type":"CategoricalColorMapper"},{"attributes":{"text":"Contagem de Frutas"},"id":"1178","type":"Title"},{"attributes":{},"id":"1186","type":"LinearScale"},{"attributes":{"formatter":{"id":"1218"},"ticker":{"id":"1189"}},"id":"1188","type":"CategoricalAxis"},{"attributes":{"axis":{"id":"1188"},"grid_line_color":null,"ticker":null},"id":"1190","type":"Grid"},{"attributes":{},"id":"1184","type":"CategoricalScale"},{"attributes":{"end":9,"start":0},"id":"1182","type":"DataRange1d"},{"attributes":{},"id":"1189","type":"CategoricalTicker"},{"attributes":{},"id":"1200","type":"HelpTool"},{"attributes":{"formatter":{"id":"1216"},"ticker":{"id":"1192"}},"id":"1191","type":"LinearAxis"},{"attributes":{"axis":{"id":"1191"},"dimension":1,"ticker":null},"id":"1194","type":"Grid"},{"attributes":{},"id":"1192","type":"BasicTicker"},{"attributes":{},"id":"1196","type":"WheelZoomTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1195"},{"id":"1196"},{"id":"1197"},{"id":"1198"},{"id":"1199"},{"id":"1200"}]},"id":"1202","type":"Toolbar"},{"attributes":{},"id":"1195","type":"PanTool"},{"attributes":{"overlay":{"id":"1201"}},"id":"1197","type":"BoxZoomTool"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1201","type":"BoxAnnotation"},{"attributes":{},"id":"1198","type":"SaveTool"},{"attributes":{},"id":"1199","type":"ResetTool"},{"attributes":{"label":{"value":"fruits"},"renderers":[{"id":"1213"}]},"id":"1224","type":"LegendItem"},{"attributes":{},"id":"1221","type":"Selection"},{"attributes":{"items":[{"id":"1224"}],"location":"top_center","orientation":"horizontal"},"id":"1223","type":"Legend"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"fruits","transform":{"id":"1209"}},"line_alpha":{"value":0.1},"line_color":{"value":"white"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"fruits"}},"id":"1212","type":"VBar"},{"attributes":{},"id":"1222","type":"UnionRenderers"},{"attributes":{"source":{"id":"1176"}},"id":"1214","type":"CDSView"},{"attributes":{"data_source":{"id":"1176"},"glyph":{"id":"1211"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1212"},"selection_glyph":null,"view":{"id":"1214"}},"id":"1213","type":"GlyphRenderer"},{"attributes":{},"id":"1218","type":"CategoricalTickFormatter"},{"attributes":{"data":{"counts":[5,3,4,2,4,6],"fruits":["Ma\u00e7as","Peras","Tangerinas","Uvas","Melancias","Morangos"]},"selected":{"id":"1221"},"selection_policy":{"id":"1222"}},"id":"1176","type":"ColumnDataSource"}],"root_ids":["1177"]},"title":"Bokeh Application","version":"2.2.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1362').textContent;
+                  var render_items = [{"docid":"3900fa12-e3c8-4ec4-b838-c1009e7e026d","root_ids":["1177"],"roots":{"1177":"298f887d-4f35-44d5-b13a-3d65e070289a"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
